@@ -28,15 +28,19 @@
     <canvas id="snowCanvas"></canvas>
 
     <script>
+        // canvas sættes op
         const canvas = document.querySelector("#snowCanvas");
         const ctx = canvas.getContext("2d");
 
+        // tomme variabler defineres
         let width;
         let height;
         let snowflakes = [];
 
+        // variation: prøv en Math random
         const numberOfSnowflakes = 150;
 
+        // styling af canvas elementet så det fylder 100% af w og h ift device
         function resizeCanvas() {
             const pixelRatio = window.devicePixelRatio || 1;
 
@@ -107,6 +111,7 @@
             }
         }
 
+        // ctx.path: tegner stier
         function drawSnowflake(snowflake) {
             ctx.beginPath();
             ctx.arc(
@@ -121,6 +126,7 @@
             ctx.fill();
         }
 
+        // clearrect: sletter framen så en ny kan tegnes
         function animate() {
             ctx.clearRect(0, 0, width, height);
 
@@ -132,14 +138,16 @@
             requestAnimationFrame(animate);
         }
 
+        // vinduets størrelse tilpasses ved en "resize"
         window.addEventListener("resize", () => {
             resizeCanvas();
             initializeSnow();
         });
 
-        resizeCanvas();
-        initializeSnow();
-        animate();
+        // hele animationen fyres af
+        resizeCanvas(); // tilpasser størrelsen af canvas
+        initializeSnow(); // laver en masse snefnug
+        animate(); // sætter i gang
     </script>
 </body>
 

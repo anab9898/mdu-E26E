@@ -94,3 +94,10 @@ Læg mærke til at knapperne adresserer animationen ved hjælp af dens navn. I d
 `animation`
 
 Hvis du har flere animationer, så giv dem forskellige navne. På den måde kan du lave knapper til de forskellige fisk og sætstykker. 
+
+## Eksemplerne
+
+* lottieSemantisk.html: så enkel som muligt; men med en mere semantisk korrekt markup. Bemærk, at renderer kan være canvas eller svg.
+* jitterAnimation.html: her med en lottie, som er skabt og eksporteret som JSON i Jitter.
+* lottieLoop.html: eksempel på et loop, der genbruger animationen.
+* sneFlokkeCanvasLoop.html: viser, hvordan et canvas-element kan indeholde animationsstumper. Lotties kan renderes til et <canvas> - og det er det/de elementer man igen kan animere med lidt opfindsomhed (se lottieLoop.html)
