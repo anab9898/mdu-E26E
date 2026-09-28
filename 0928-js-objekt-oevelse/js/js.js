@@ -3,5 +3,3 @@
  * purpose: Behaviors
  **/
 console.log('Success: JavaScriptet sender noget usynligt til konsollen!')
-
-let trolde = [];
