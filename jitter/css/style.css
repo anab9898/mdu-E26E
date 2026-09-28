@@ -22,6 +22,8 @@ p {
     animation: flyv-over-vinduet 5s linear forwards;
 }
 
+
+/* CSS animation  */
 @keyframes flyv-over-vinduet {
     from {
         transform: translate(-120vw);
