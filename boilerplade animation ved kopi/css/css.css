@@ -1,0 +1,38 @@
+/**
+ * file: css/css.css
+ * purpose: animation ... klick ... 
+ **/
+
+/* Remove whitespace on top of certain browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flytMig {
+animation-name: minAnimation;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+/* styling af firkant */
+.firkanter {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+/* Her kommer animationsklasse */
+@keyframes minAnimation {
+  from {
+    position: relative;
+    left: -120px;
+    top: 0px;
+  }
+  to {
+    left: 560px;
+    top: 120px;
+    background-color: bisque;
+  }
+}
