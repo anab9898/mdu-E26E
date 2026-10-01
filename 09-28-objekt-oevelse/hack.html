@@ -1,0 +1,35 @@
+<p><img src="https://eaaa.instructure.com/courses/31966/files/1704353/preview" alt="image.png" width="277" height="400" data-api-endpoint="https://eaaa.instructure.com/api/v1/courses/31966/files/1704353" data-api-returntype="File" /></p>
+<p><em>- Trolden Valdemar er ogs&aring; et objekt.</em></p>
+<p>&nbsp;</p>
+<hr />
+<h3>Dagens kodeeksempel</h3>
+<p>N&aring;r du kan se, at alt virker i JsFiddle, s&aring; kan du inds&aelig;tte koden i et webprojekt. JavaScriptet placeres enten i en ekstern fil, som du ser det i Boilerplaten - eller i et script-element, der placeres nederst i HTML-filen.</p>
+<h3>JsFiddle - kodeeksempel<iframe title="indlejret indhold" src="https://jsfiddle.net/petj/cp63r2g5/15/embedded/" width="100%" height="300" loading="lazy" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></h3>
+<hr />
+<h3>FAQ</h3>
+<p><strong>- Kan man inds&aelig;tte billeder i objektet?</strong><br />- Ja og nej. Skriv filnavnet i objektet. Billedet s&aelig;ttes ind ved hj&aelig;lp af <strong>innerHTML</strong> i stedet for <strong>innerText</strong>. Med innerHTML kan du tilf&oslash;je strenge med html-elementer.</p>
+<p><strong>- Kan man bruge lyd og video?</strong><br />- Svaret er n&aelig;sten det samme som ovenfor. Skriv hvad audio- eller videofilen hedder.</p>
+<p><strong>- Hvordan f&aring;r vi alle pizzaerne med?</strong><br />- Senere l&aelig;rer du at bruge JSON. Her vil man lave en liste med en masse ensartede objekter.</p>
+<p><strong>- Hvordan skriver man listen ud? Listen giver en underlig fejl?</strong><br />- Det l&aelig;rer du senere. L&oslash;sningen er et loop, som automatisk g&aring;r gennem alle listens elementer; men det kommer vi til senere.</p>
+<hr />
+<h3>Alle troldene</h3>
+<p>Alle data fra din tabel kan samles i et enkelt JavaScript objekt (JSON).</p>
+<p>Herunder ser du et eksempel p&aring;, hvordan alle troldene fra en tabel kan repr&aelig;senteres som et objekt i JavaScript. N&aring;r du kan lave &eacute;t objekt, s&aring; er det let at samle flere ensartet formatterede trolde (eller hvad det nu er) i &eacute;t stort JavaScript objekt. Dette format kaldes JSON, dvs. <strong>J</strong>avaScript <strong>O</strong>bject <strong>N</strong>otation.</p>
+<p>Fordi objektet er en liste med troldeobjekter er troldene indlejret i skarpe parenteser. Hver trold st&aring;r i kr&oslash;llede parenteser adskilt af kommaer. Alts&aring; lidt a la det her:</p>
+<p>let trolde = <span style="color: #e62429;">[</span> <span style="background-color: #fbeeb8;">{ ... trold 1 ...}</span><span style="background-color: #c2e0f4;"> , </span><span style="background-color: #fbeeb8;">{ ... trold 2 ...}</span><span style="background-color: #c2e0f4;">, </span><span style="background-color: #fbeeb8;">{ ... trold N ...}</span> <span style="color: #e62429;">]</span>&nbsp;</p>
+<p>Med et loop kan du printe alle trolde ud p&aring; en gang; men den teknik venter vi lidt med.</p>
+<hr />
+<p><iframe title="indlejret indhold" src="https://jsfiddle.net/petj/7ajqm9zL/8/embedded/" width="100%" height="300" loading="lazy" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></p>
+<h3>Liste og loop</h3>
+<p>N&aring;r du har en liste, kan indholdet hentes ved hj&aelig;lp at et loop. Her er et meget enkelt eksempel - troldens v&aring;ben skrives til sk&aelig;rmbilledet.</p>
+<h2><iframe title="indlejret indhold" src="https://jsfiddle.net/petj/dqm94xLn/13/embedded/" width="100%" height="300" loading="lazy" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></h2>
+<hr />
+<h2>En lille hjernevrider</h2>
+<p>Skriv selv en kode, der f&oslash;rst kan:</p>
+<ul>
+    <li>Udskrive en liste med alle troldenes navne.</li>
+</ul>
+<p>Derefter kan du m&aring;ske finde ud af at:</p>
+<ul>
+    <li>Udskrive alle troldenes navne, og give listen over hver trolds v&aring;bensamling!</li>
+</ul>
